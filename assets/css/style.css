@@ -5,13 +5,15 @@
 
 .navbar-item {
       margin-right: 15px;
-      
-      
+          
 }
 .navigation {
       background-color: lightgray;
-      height: 100px;
+      
       font-size: 16px;
+}
 
+.navbar-start img{
+      height: 100px;
 }
 
