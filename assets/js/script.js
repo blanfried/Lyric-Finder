@@ -1,5 +1,6 @@
-import { getLyrics, getSong } from 'genius-lyrics-api';
+var requestUrl = 'https://www.stands4.com/services/v2/lyrics.php';
 
-function getLyrics(song) {
-      
-}
+  fetch(requestUrl)
+    .then(function (response) {
+      return response.json();
+    })
