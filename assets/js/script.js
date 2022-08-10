@@ -1,32 +1,19 @@
 const artistInput = document.querySelector('#artist-input');
 const songInput = document.querySelector('#song-input');
-const artist = artistInput.value;
-const song = songInput.value;
 const searchBtn = document.querySelector('#search-btn');
 
-function createUrl() {
-      let baseUrl = 'https://api.lyrics.ovh/v1/'
-      function appendArtist() {
-            if (onclick.searchBtn) {
-                  baseUrl.append(artist + "/")
-            }
-      }
-      function appendSong() {
-            if (onclick.searchBtn) {
-                  baseUrl.append(song)
-            }
-      }
-      appendArtist();
-      appendSong();
+
+searchBtn.addEventListener("click", () =>{
+      const artist = artistInput.value;
+      const song = songInput.value;
+      const requestUrl = `https://api.lyrics.ovh/v1/${artist + "/" + song}`
+      fetch(requestUrl)
+      .then(response => response.json())
+      .then(data => display_lyrics(data))
+      .catch(error => console.log(error));
+})
+
+function display_lyrics(data) {
+      const lyricsBox = document.querySelector("#lyrics-id");
+      document.getElementById("lyrics-id").value =  data['lyrics'];
 }
-
-console.log(createUrl());
-
-
-
-var requestUrl = 'https://api.lyrics.ovh/v1/{artist}/{song}';
-
-  fetch(requestUrl)
-    .then(function (response) {
-      return response.json();
-    })
