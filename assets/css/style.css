@@ -24,7 +24,6 @@
       height: 100px;
 }
 
-
 .card {
       background-color: hsl(0, 0%, 100%);
       border-radius: 5px;
@@ -33,7 +32,8 @@
       color: hsl(206, 17%, 28%);
       font-size: 18px;
       margin: 0 auto;
-      max-width: 800px;
+      margin-top: 30px;
+      max-width: 1000px;
       padding: 30px 40px;
     }
 
