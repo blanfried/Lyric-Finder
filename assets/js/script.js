@@ -1,5 +1,19 @@
-import { getLyrics, getSong } from 'genius-lyrics-api';
+const artistInput = document.querySelector('#artist-input');
+const songInput = document.querySelector('#song-input');
+const searchBtn = document.querySelector('#search-btn');
 
-function getLyrics(song) {
-      
+
+searchBtn.addEventListener("click", () =>{
+      const artist = artistInput.value;
+      const song = songInput.value;
+      const requestUrl = `https://api.lyrics.ovh/v1/${artist + "/" + song}`
+      fetch(requestUrl)
+      .then(response => response.json())
+      .then(data => display_lyrics(data))
+      .catch(error => console.log(error));
+})
+
+function display_lyrics(data) {
+      const lyricsBox = document.querySelector("#lyrics-id");
+      document.getElementById("lyrics-id").value =  data['lyrics'];
 }
