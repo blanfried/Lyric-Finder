@@ -16,7 +16,16 @@ searchBtn.addEventListener("click", () =>{
 })
 
 function display_lyrics(data) {
-      const lyricsBox = document.querySelector("#lyrics-id");
+      // const lyricsBox = document.querySelector("#lyrics-id");
       document.getElementById("lyrics-id").value =  data['lyrics'];
       localStorage.setItem((data['lyrics']), JSON.stringify(data['lyrics']));
 }
+
+// const favouriteSongsList = document.querySelector('#favouriteSongsList')
+// const pastSongs = JSON.parse(localStorage.getItem('songs')) || []
+// const pastArtists = JSON.parse(localStorage.getItem('artists')) || []
+
+// favouriteSongsList.innerHTML = 
+// pastSongs || pastArtists .map(data => {
+//       return `<li class="favourite-songs">${data.song} - ${data.artist}</li>`
+// }).join('')

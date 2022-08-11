@@ -74,3 +74,23 @@
 #search-btn {
       justify-self: center;
 }
+
+#favouriteSongsList {
+      list-style: none;
+      margin-bottom: 4rem;
+}
+
+.flex-column {
+      display: flex;
+      flex-direction: column;
+}
+
+.flex-center {
+      justify-content: center;
+      align-items: center;
+}
+
+.favourite-songs {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+}
