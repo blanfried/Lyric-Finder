@@ -1,19 +1,18 @@
-const artistInput = document.querySelector('#artist-input');
-const songInput = document.querySelector('#song-input');
-const searchBtn = document.querySelector('#search-btn');
+const artistInput = document.querySelector("#artist-input");
+const songInput = document.querySelector("#song-input");
+const searchBtn = document.querySelector("#search-btn");
 
-
-searchBtn.addEventListener("click", () =>{
-      const artist = artistInput.value;
-      const song = songInput.value;
-      const requestUrl = `https://api.lyrics.ovh/v1/${artist + "/" + song}`
-      fetch(requestUrl)
-      .then(response => response.json())
-      .then(data => display_lyrics(data))
-      .catch(error => console.log(error));
-})
+searchBtn.addEventListener("click", () => {
+  const artist = artistInput.value;
+  const song = songInput.value;
+  const requestUrl = `https://api.lyrics.ovh/v1/${artist + "/" + song}`;
+  fetch(requestUrl)
+    .then((response) => response.json())
+    .then((data) => display_lyrics(data))
+    .catch((error) => console.log(error));
+});
 
 function display_lyrics(data) {
-      const lyricsBox = document.querySelector("#lyrics-id");
-      document.getElementById("lyrics-id").value =  data['lyrics'];
+  const lyricsBox = document.querySelector("#lyrics-id");
+  document.getElementById("lyrics-id").value = data["lyrics"];
 }
