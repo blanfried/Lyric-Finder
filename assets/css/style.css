@@ -1,75 +1,79 @@
 .search-container {
-      padding: 4rem;
-      background-color: whitesmoke;
+  padding: 4rem;
+  background-color: whitesmoke;
 }
 
 .navbar-item {
-      margin-right: 15px;
-          
+  margin-right: 15px;
 }
 .navigation {
-      background-color: lightgray;
-      
-      font-size: 16px;
+  background-color: lightgray;
+
+  font-size: 16px;
 }
 
-.title{
-      margin-top: 30px;
+.title {
+  margin-top: 30px;
 }
-.navbar-start{
-      text-decoration-style: solid;
+.navbar-start {
+  text-decoration-style: solid;
 }
 
-.navbar-start img{
-      height: 100px;
+.navbar-start img {
+  height: 100px;
 }
 
 .card {
-      background-color: hsl(0, 0%, 100%);
-      border-radius: 5px;
-      border-width: 1px;
-      box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-      color: hsl(206, 17%, 28%);
-      font-size: 18px;
-      margin: 0 auto;
-      margin-top: 30px;
-      max-width: 1000px;
-      padding: 30px 40px;
-    }
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 5px;
+  border-width: 1px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+  color: hsl(206, 17%, 28%);
+  font-size: 18px;
+  margin: 0 auto;
+  margin-top: 30px;
+  max-width: 1000px;
+  padding: 30px 40px;
+}
 
 .card-body {
-      min-height: 1100px;
-    }
+  min-height: 1100px;
+}
 
 #lyrics-id {
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-      border: none;
-      display: block;
-      width: 100%;
-      min-height: 1050px;
-      padding-top: 15px;
-      padding-left: 15px;
-      padding-right: 15px;
-      padding-bottom: 85px;
-      font-size: 1.2rem;
-      text-align: center;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      border: 2px dashed #c0c7cf;
-      border-radius: 6px;
-      resize: none;
-      overflow: hidden;
-    }
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  display: block;
+  width: 100%;
+  min-height: 1050px;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 85px;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px dashed #c0c7cf;
+  border-radius: 6px;
+  resize: none;
+  overflow: hidden;
+}
 
-.footer{
-      background-color: lightgray;
-      
-      margin-top: 200px;
-      height: 3px;
+.footer {
+  background-color: lightgray;
+
+  margin-top: 200px;
+  height: 3px;
 }
 
 #search-btn {
-      justify-self: center;
+  justify-self: center;
+}
+
+#chart {
+  width: 25rem;
+  border-radius: 1rem;
 }
