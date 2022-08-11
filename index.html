@@ -30,14 +30,14 @@
 <h2 class="subtitle">Subtitle</h2>
 
        <div class="navbar-end">
-       <a class="navbar-item">
+       <a class="navbar-item" href="./index.html">
        Home
       </a>
           
-  <a class="navbar-item">
+  <a class="navbar-item" href="./yourSongs.html">
       Your Song History
       </a>
-      <a class="navbar-item">
+      <a class="navbar-item" href="./yourFavourites.html">
       Your Favourites
       </a>
         
@@ -45,13 +45,14 @@
               
   <div class="navbar-item">
   <div class="buttons">
-     <a class="button primary">
+     <a class="button primary" href="./SignUpLogin.html">
     <strong>Sign up</strong>
      </a>
-    <a class="button Login">
+    <a class="button Login" href="./SignUpLogin.html">
     <strong>Login</strong> </a>
     </div> </div>
     </nav>
+            <div class="card">
             <div class="field">
               <label class="label">Artist</label>
               <div class="control">
@@ -68,8 +69,15 @@
                 <button id="search-btn">Search</button>
               </div>
             </div>
-
- 
+              <div class="card-body">
+                <textarea
+                  readonly
+                  id="lyrics-id"
+                  placeholder="Your Lyrics"
+                  aria-label="Generated Lyrics"
+                ></textarea>
+              </div>
+              
    <script src="https://genius.codes"></script>
    <script src="./assets/js/script.js"></script>
  
@@ -85,18 +93,6 @@
        
       </p>
     </div>
-    <div class="column is-narrow">
-      <p class="bd-notification is-primary">
-        <code class="html">Your Song History</code><br>
-        
-      </p>
-    </div>
-    <div class="column is-narrow">
-      <p class="bd-notification is-primary">
-        <code class="html">Your Favourites</code><br>
-        
-      </p>
-    </div>
   </div>
   <div class="columns is-vcentered">
     <div class="column is-8">
@@ -106,7 +102,6 @@
       <p class="bd-notification is-primary"></p>
     </div>
   </div>
-
      
 </body>
 
