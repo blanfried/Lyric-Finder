@@ -7,6 +7,8 @@ searchBtn.addEventListener("click", () =>{
       const artist = artistInput.value;
       const song = songInput.value;
       const requestUrl = `https://api.lyrics.ovh/v1/${artist + "/" + song}`
+      localStorage.setItem('artist', JSON.stringify(artist));
+      localStorage.setItem('song', JSON.stringify(song));
       fetch(requestUrl)
       .then(response => response.json())
       .then(data => display_lyrics(data))
@@ -14,6 +16,16 @@ searchBtn.addEventListener("click", () =>{
 })
 
 function display_lyrics(data) {
-      const lyricsBox = document.querySelector("#lyrics-id");
+      // const lyricsBox = document.querySelector("#lyrics-id");
       document.getElementById("lyrics-id").value =  data['lyrics'];
+      localStorage.setItem((data['lyrics']), JSON.stringify(data['lyrics']));
 }
+
+// const favouriteSongsList = document.querySelector('#favouriteSongsList')
+// const pastSongs = JSON.parse(localStorage.getItem('songs')) || []
+// const pastArtists = JSON.parse(localStorage.getItem('artists')) || []
+
+// favouriteSongsList.innerHTML = 
+// pastSongs || pastArtists .map(data => {
+//       return `<li class="favourite-songs">${data.song} - ${data.artist}</li>`
+// }).join('')
