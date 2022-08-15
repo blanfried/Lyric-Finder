@@ -13,15 +13,15 @@ searchBtn.addEventListener("click", () =>{
       .then(response => response.json())
       .then(data => display_lyrics(data))
       .catch(error => console.log(error));
+
+
 })
 
 function display_lyrics(data) {
       // const lyricsBox = document.querySelector("#lyrics-id");
       document.getElementById("lyrics-id").value =  data['lyrics'];
       localStorage.setItem((data['lyrics']), JSON.stringify(data['lyrics']));
+      
 }
-
-
-
 
 // Can also add artist and song values to local storage and then add another section to append them to right after the lyrics and then just remove the yourfavourites html
