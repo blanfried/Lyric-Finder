@@ -20,28 +20,3 @@ function display_lyrics(data) {
       document.getElementById("lyrics-id").value =  data['lyrics'];
       localStorage.setItem((data['lyrics']), JSON.stringify(data['lyrics']));
 }
-
-// const favouriteSongsList = document.querySelector('#favouriteSongsList')
-// const pastSongs = JSON.parse(localStorage.getItem('songs')) || []
-// const pastArtists = JSON.parse(localStorage.getItem('artists')) || []
-
-// favouriteSongsList.innerHTML = 
-// pastSongs || pastArtists.map(data => {
-//       return `<li class="favourite-songs">${data.song} - ${data.artist}</li>`
-// }).join('')
-
-
-// document.getElementById("favouriteSongsList").html(JSON.parse(localStorage.getItem("artists")).map(function(data) {
-//       var $list = $('<li>');
-//       $list.append($('<h1>', { text: key.artist }));
-//       $list.append($('<div>', { text: data.description }));
-//       return $list;
-//   }));
-
-
-  const data = JSON.parse(window.localStorage.getItem('artist'));
-
-data.forEach(function(item) {
-    const $ul = $("favouriteSongsList");        
-    $ul.append('<li>'+ item.name + '</li>');
-})
