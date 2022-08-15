@@ -1,7 +1,6 @@
-const artistInput = document.querySelector('#artist-input');
-const songInput = document.querySelector('#song-input');
-const searchBtn = document.querySelector('#search-btn');
-
+const artistInput = document.querySelector("#artist-input");
+const songInput = document.querySelector("#song-input");
+const searchBtn = document.querySelector("#search-btn");
 
 searchBtn.addEventListener("click", () =>{
       const artist = artistInput.value;

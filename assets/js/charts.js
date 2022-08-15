@@ -1,23 +1,22 @@
-var top10 = document.querySelector ('#top10');
+const album = document.getElementById("#top-10");
 
-const songInput = document.querySelector('#song-input');
-var request = new XMLHttpRequest();
-request.open(
-  "GET",
-  "https://ws.audioscrobbler.com/2.0/?method=chart.gettoptracks&api_key=1e24541a1d58fbe7992421c03d6c8516&format=json",
-  true
-);
+fetch(
+  "https://ws.audioscrobbler.com/2.0/?method=tag.gettopalbums&tag=disco&api_key=6c7aa94be66ddd84cad6986fca45fe45&format=json"
+)
+  .then((response) => {
+    if (response.ok) {
+      return response.json();
+    } else {
+      throw new Error("NETWORK RESPONSE ERROR");
+    }
+  })
+  .then((data) => {
+    console.log(data);
+    displayAlbum(data);
+  })
+  .catch((error) => console.error("FETCH ERROR:", error));
 
-request.onload = function () {};
-request.send();
-function getData() {
-    const response = await fetch('https://ws.audioscrobbler.com/2.0/?method=chart.gettoptracks&api_key=1e24541a1d58fbe7992421c03d6c8516&format=json')
-    const data = await response.json()
-  }
-
-  var data = JSON.parse(this.response)
-
-data.forEach(song => {
- 
-  console.log(song.title)
-})
+function displayAlbum(data) {
+  const album = data.album[0];
+  const albumDiv = document.getElementById("album");
+}
