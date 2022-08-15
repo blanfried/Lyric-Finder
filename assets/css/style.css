@@ -70,26 +70,31 @@
   height: 3px;
 }
 
+#chart {
+  width: 25rem;
+  border-radius: 1rem;
+}
+
 #search-btn {
-      justify-self: center;
+  justify-self: center;
 }
 
 #favouriteSongsList {
-      list-style: none;
-      margin-bottom: 4rem;
+  list-style: none;
+  margin-bottom: 4rem;
 }
 
 .flex-column {
-      display: flex;
-      flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .flex-center {
-      justify-content: center;
-      align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .favourite-songs {
-      font-size: 2.8rem;
-      margin-bottom: 0.5rem;
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
 }
