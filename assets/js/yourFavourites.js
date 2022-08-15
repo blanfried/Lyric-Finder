@@ -35,10 +35,10 @@ JSON.parse(window.localStorage.getItem('song'));
 
 function retrieveKeys(){ //retrieves items in the localStorage
       // console.log("retrieve records");
-      const artist = localStorage.key('artist').value;
-      const song = localStorage.key('song').value;
-      var artistKey = window.localStorage.getItem(artist);
-      var songKey = window.localStorage.getItem(song);
+      // const artist = localStorage.key('artist').value;
+      // const song = localStorage.key('song').value;
+      var artistKey = window.localStorage.getItem('artist').value;
+      var songKey = window.localStorage.getItem('song').value;
       var list = document.createElement("<li></li>");
       var artistKeyInfo = document.createTextNode(artistKey);
       var songKeyInfo = document.createTextNode(songKey);

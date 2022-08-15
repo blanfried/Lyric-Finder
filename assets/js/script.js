@@ -13,6 +13,8 @@ searchBtn.addEventListener("click", () =>{
       .then(response => response.json())
       .then(data => display_lyrics(data))
       .catch(error => console.log(error));
+
+
 })
 
 function display_lyrics(data) {
@@ -39,9 +41,9 @@ function display_lyrics(data) {
 //   }));
 
 
-  const data = JSON.parse(window.localStorage.getItem('artist'));
+//   const data = JSON.parse(window.localStorage.getItem('artist'));
 
-data.forEach(function(item) {
-    const $ul = $("favouriteSongsList");        
-    $ul.append('<li>'+ item.name + '</li>');
-})
+// data.forEach(function(item) {
+//     const $ul = $("favouriteSongsList");        
+//     $ul.append('<li>'+ item.name + '</li>');
+// })
