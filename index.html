@@ -1,5 +1,5 @@
-  <!DOCTYPE html>
-  <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
   <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,20 +8,25 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
         <link rel="stylesheet" href="./assets/css/style.css">
 
-</head>
-<body>
+  </head>
+  <body>
       <nav class="navigation" role="navigation" aria-label="main navigation">
-          
-              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-              </a>
-            </div>
-          
-          
- <div id="navbarBasicExample" class="navbar-menu">
-  <div class="navbar-start">
+
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
     <figure class="image is-3x3">
       <img src="./assets/images/musicicon.png"> 
     </figure>
@@ -33,21 +38,21 @@
        <a class="navbar-item" href="./index.html">
        Home
       </a>
-          
+
   <a class="navbar-item" href="./yourSongs.html">
       Your Song History
       </a>
       <a class="navbar-item" href="./yourFavourites.html">
       Your Favourites
       </a>
-        
-    </div>    
-              
-  <div class="navbar-item">
-  <div class="buttons">
+
+        </div>
+
+          <div class="navbar-item">
+            <div class="buttons">
      <a class="button primary" href="./SignUpLogin.html">
-    <strong>Sign up</strong>
-     </a>
+                <strong>Sign up</strong>
+              </a>
     <a class="button Login" href="./SignUpLogin.html">
     <strong>Login</strong> </a>
     </div> </div>
@@ -57,17 +62,17 @@
               <label class="label">Artist</label>
               <div class="control">
                 <input class="input" id="artist-input" type="text" placeholder="e.g. Drake ">
-              </div>
             </div>
+          </div>
             
             <div class="field">
               <label class="label">Song</label>
               <div class="control">
                 <input class="input" id="song-input" type="email" placeholder="e.g. nice for what..">
-              </div>
+        </div>
               <div>
                 <button id="search-btn">Search</button>
-              </div>
+      </div>
             </div>
               <div class="card-body">
                 <textarea
@@ -77,33 +82,35 @@
                   aria-label="Generated Lyrics"
                 ></textarea>
               </div>
-              
-   <script src="https://genius.codes"></script>
-   <script src="./assets/js/script.js"></script>
- 
-   <div class="container is-fullhd">
-    <div class="notification" id="top-10">
-   <strong> UK Top 10 Charts</strong> 
+
+    <script src="https://genius.codes"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/charts.js"></script>
+   <!-- charts -->
+    <div class="container is-fullhd">
+      <div class="album" id="top-10">
+        <strong> UK Top 10 Charts</strong>
+      </div>
     </div>
-  </div>
-  <div class="columns is-mobile is-multiline is-centered">
-    <div class="column is-narrow">
-      <p class="bd-notification is-primary">
+    <!-- charts -->
+    <div class="columns is-mobile is-multiline is-centered">
+      <div class="column is-narrow">
+        <p class="bd-notification is-primary">
         <code class="html">Create Playlist +</code><br>
        
-      </p>
+        </p>
+      </div>
     </div>
-  </div>
-  <div class="columns is-vcentered">
-    <div class="column is-8">
-      <p class="bd-notification is-primary">Popular New releases</p>
+    <div class="columns is-vcentered">
+      <div class="column is-8">
+        <p class="bd-notification is-primary">Popular New releases</p>
+      </div>
+      <div class="column">
+        <p class="bd-notification is-primary"></p>
+      </div>
     </div>
-    <div class="column">
-      <p class="bd-notification is-primary"></p>
-    </div>
-  </div>
-     
-</body>
+
+  </body>
 
   <footer class="footer">
     <div class="content has-text-centered">
