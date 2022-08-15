@@ -21,6 +21,7 @@ function display_lyrics(data) {
       // const lyricsBox = document.querySelector("#lyrics-id");
       document.getElementById("lyrics-id").value =  data['lyrics'];
       localStorage.setItem((data['lyrics']), JSON.stringify(data['lyrics']));
+      
 }
 
 // const favouriteSongsList = document.querySelector('#favouriteSongsList')

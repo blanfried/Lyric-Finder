@@ -8,7 +8,6 @@
 // }).join('')
 
 
-
 // document.getElementById("favouriteSongsList").html(JSON.parse(localStorage.getItem("artists")).map(function(data) {
 //       var $list = $('<li>');
 //       $list.append($('<h1>', { text: key.artist }));
