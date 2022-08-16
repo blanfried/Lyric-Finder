@@ -55,9 +55,8 @@
 
         <div class="navbar-end">
           <a class="navbar-item" href="./index.html">Home</a>
-          <a class="navbar-item" href="./yourSongs.html">Your Song History</a>
           <a class="navbar-item" href="./yourFavourites.html"
-            >Your Favourites</a
+            >Recent searchers</a
           >
         </div>
 
@@ -110,12 +109,13 @@
           aria-label="Generated Lyrics"
         ></textarea>
       </div>
-
+</div>
       <div class="columns is-flex is-justify-content-space-around">
         <div class="column is-one-third has-background-light has-text-centered">
-          <div id="songs-chart" class="content">
-            <strong>UK Top 10 Songs 🔥</strong>
-            <ol>
+
+          <div class="content">
+            <strong>Top 10 Songs 🔥</strong>
+            <ol id="songChart">
               <li></li>
               <li></li>
               <li></li>
@@ -130,9 +130,9 @@
           </div>
         </div>
         <div class="column is-one-third has-background-light has-text-centered">
-          <div id="artist-chart" class="content">
-            <strong>UK Top 10 Artist 🔥</strong>
-            <ol>
+          <div class="content">
+            <strong>Top 10 Artist 🔥</strong>
+            <ol id="artistChart">
               <li></li>
               <li></li>
               <li></li>
@@ -155,7 +155,7 @@
           <p class="bd-notification is-primary"></p>
         </div>
       </div>
-    </div>
+    
 
     <footer class="footer">
       <div class="content has-text-centered">
