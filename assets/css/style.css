@@ -69,12 +69,14 @@
   margin-top: 200px;
   height: 3px;
 }
-/* 
-#chart {
-  width: 25rem;
-  border-radius: 1rem;
-} */
-
+#artist-top10 {
+      margin: 5%;
+      width: 40%;
+    }
+    #songs-top10 {
+      margin: 5%;
+      width: 40%;
+    }
 #search-btn {
   justify-self: center;
 }
