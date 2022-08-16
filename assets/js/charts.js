@@ -16,8 +16,11 @@ function displaySongsChart(data) {
   const songsChart = document.getElementById("songs-chart");
 }
 
-const songsName = tracks.name;
+const songsName = data.tracks;
 
-const heading = document.createElement("h1");
-heading.innerHTML = songsName;
-songsChart.appendChild(heading);
+for (let i = 0; i < scores.length; i++) {
+  console.log(tracks[i]);
+  //const heading = document.createElement("h1");
+  //heading.innerHTML = songsName;
+  //songsChart.appendChild(heading);
+}
