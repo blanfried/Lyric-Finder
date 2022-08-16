@@ -14,7 +14,6 @@ fetch(
     console.error("Error:", error);
   });
 
-
 function appendSongs(data) {
   let trackAr = data.tracks.track;
   let trackList = [];
@@ -48,4 +47,4 @@ function appendArtist(data) {
   artistList.forEach((artist, i) => {
     artistChart.children[i].textContent = artist;
   });
-
+}
