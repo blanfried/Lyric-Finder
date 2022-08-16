@@ -52,19 +52,35 @@
 
 
     <body>
-      <div class="container">
-            <div id="favourites" class="flex-center flex-column">
-                  <h1 id="yourFavSongs">Recent Searchers</h1>
-                  <ul id="favouriteSongsList"> </ul>
-            </div>
+      <div class="card">
+      <div class="artist-field">
+        <label class="label" id="artist-label">Recent Artist</label>
+        <div class="control">
+          <textarea
+          readonly
+          id="recent-artist"
+          placeholder="Artist"
+          aria-label="Generated Recent Artist"
+        ></textarea>
+        </div>
+        
       </div>
 
+      <div class="song-field">
+        <label class="label" id="song-label">Recent Song</label>
+        <div class="control">
+          <textarea
+          readonly
+          id="recent-song"
+          placeholder="Song"
+          aria-label="Generated Recent Song"
+        ></textarea>
+        </div>
 
-      <script src="./assets/js/highscores.js"></script>
+
   </body>
   </html>
               
-  <script src="https://genius.codes"></script>
   <script src="./assets/js/yourFavourites.js"></script>
 
   <footer class="footer">
