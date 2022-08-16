@@ -9,9 +9,15 @@ fetch(
     console.error("Error:", error);
   });
 
-const songsChart = document.getElementById("songs-chart");
-const artistChart = document.getElementById("artist-chart");
+const songsChart = document.querySelector("#songs-chart");
 
-function show(data) {
-  let tab = <tr></tr>;
+function displaySongsChart(data) {
+  const displaySongsChart = data.tracks[0];
+  const songsChart = document.getElementById("songs-chart");
 }
+
+const songsName = tracks.name;
+
+const heading = document.createElement("h1");
+heading.innerHTML = songsName;
+songsChart.appendChild(heading);
