@@ -79,6 +79,19 @@
     }
 #search-btn {
   justify-self: center;
+  justify-items: center;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  background-color: rgb(6, 247, 247);
+  color: rgba(0, 0, 0);
+  border: 5px;
+  border-radius: 2rem;
+  font-size: 1rem;
+}
+
+#search-btn:hover {
+  cursor: pointer;
+  background-color: rgb(247, 231, 6);
 }
 
 #favouriteSongsList {
