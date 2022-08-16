@@ -1,24 +1,21 @@
-// const favouriteSongsList = document.querySelector('#favouriteSongsList')
-// const pastSongs = JSON.parse(localStorage.getItem('songs')) || []
-// const pastArtists = JSON.parse(localStorage.getItem('artists')) || []
+const recentSong = document.getElementById("recent-song");
+const recentArtist = document.getElementById("recent-artist");
+const artist = JSON.parse(localStorage.getItem('artist'));
+const song = JSON.parse(localStorage.getItem('song'));
 
-// favouriteSongsList.innerHTML = 
-// pastSongs || pastArtists.map(data => {
-//       return `<li class="favourite-songs">${data.song} - ${data.artist}</li>`
-// }).join('')
+function display_stored_artist() {
+    if (artist != null) {
+        recentArtist.append(artist);
+    }
+}
 
+function display_stored_song() {
+    if (song != null) {
+        recentSong.append(song);
+    }
+}
 
-// document.getElementById("favouriteSongsList").html(JSON.parse(localStorage.getItem("artists")).map(function(data) {
-//       var $list = $('<li>');
-//       $list.append($('<h1>', { text: key.artist }));
-//       $list.append($('<div>', { text: data.description }));
-//       return $list;
-//   }));
+display_stored_artist()
+display_stored_song()
 
-
-const artist = localStorage.key('artist')
-
-data.forEach(function(item) {
-    const ul = document.getElementById("favouriteSongsList");
-    ul.append('<li>'+ item.name + '</li>');
-})
+console.log(artist);
