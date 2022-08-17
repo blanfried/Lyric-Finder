@@ -10,9 +10,17 @@ searchBtn.addEventListener("click", () =>{
       localStorage.setItem('artist', JSON.stringify(artist));
       localStorage.setItem('song', JSON.stringify(song));
       fetch(requestUrl)
-      .then(response => response.json())
+      .then(response => {
+            if (!response.ok) {
+                  throw new Error('Error fetching artist');
+            } 
+            return response.json()
+      })
       .then(data => display_lyrics(data))
-      .catch(error => console.log(error));
+      .catch(error => {
+            console.log(error)
+            display_lyrics_not_found()
+      });
 
 
 })
@@ -24,4 +32,7 @@ function display_lyrics(data) {
       
 }
 
-// Can also add artist and song values to local storage and then add another section to append them to right after the lyrics and then just remove the yourfavourites html
+function display_lyrics_not_found() {
+      document.getElementById("lyrics-id").value = "Lyrics not found";
+      
+}

@@ -7,6 +7,24 @@
         <title>Lyric Finder</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
         <link rel="stylesheet" href="./assets/css/style.css">
+        <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/images/site.webmanifest" />
 
   </head>
   <body>
@@ -34,45 +52,60 @@
       Home
       </a>
           
-      <a class="navbar-item" href="./yourFavourites.html">
-      Recent Searchers
+      <a class="navbar-item" href="./recentSearch.html">
+      Recent Search
       </a>
         
     </div>    
               
   <div class="navbar-item">
   <div class="buttons">
-    <a class="button primary" href="./SignUpLogin.html">
+    <a class="button primary" href="./SignUp.html">
     <strong>Sign up</strong>
     </a>
-    <a class="button Login" href="./SignUpLogin.html">
+    <a class="button Login" href="./login.html">
     <strong>Login</strong> </a>
     </div> </div>
     </nav>
 
 
     <body>
-      <div class="container">
-            <div id="favourites" class="flex-center flex-column">
-                  <h1 id="yourFavSongs">Recent Searchers</h1>
-                  <ul id="favouriteSongsList"> </ul>
-            </div>
+      <div class="card">
+      <div class="artist-field">
+        <label class="label" id="artist-label">Last Artist</label>
+        <div class="control">
+          <textarea
+          readonly
+          id="recent-artist"
+          placeholder="Artist"
+          aria-label="Generated Recent Artist"
+        ></textarea>
+        </div>
+        
       </div>
 
+      <div class="song-field">
+        <label class="label" id="song-label">Last Song</label>
+        <div class="control">
+          <textarea
+          readonly
+          id="recent-song"
+          placeholder="Song"
+          aria-label="Generated Recent Song"
+        ></textarea>
+        </div>
 
-      <script src="./assets/js/highscores.js"></script>
+
   </body>
   </html>
               
-  <script src="https://genius.codes"></script>
-  <script src="./assets/js/yourFavourites.js"></script>
+  <script src="./assets/js/recentSearch.js"></script>
 
   <footer class="footer">
     <div class="content has-text-centered">
       <p>
-        <strong>Lyrics Finder </strong> by <a href="https://jgthms.com">Project Team 1</a>. The source code is licensed
-        <a ></a>. The website content
-        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"></a>.
+        <strong>Lyrics Finder </strong> by
+        <strong>Project Team 1.</strong> 
       </p>
     </div>
   </footer>
