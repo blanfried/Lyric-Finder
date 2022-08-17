@@ -10,9 +10,17 @@ searchBtn.addEventListener("click", () =>{
       localStorage.setItem('artist', JSON.stringify(artist));
       localStorage.setItem('song', JSON.stringify(song));
       fetch(requestUrl)
-      .then(response => response.json())
+      .then(response => {
+            if (!response.ok) {
+                  throw new Error('Error fetching artist');
+            } 
+            return response.json()
+      })
       .then(data => display_lyrics(data))
-      .catch(error => console.log(error));
+      .catch(error => {
+            console.log(error)
+            display_lyrics_not_found()
+      });
 
 
 })
@@ -21,5 +29,10 @@ function display_lyrics(data) {
       // const lyricsBox = document.querySelector("#lyrics-id");
       document.getElementById("lyrics-id").value =  data['lyrics'];
       localStorage.setItem((data['lyrics']), JSON.stringify(data['lyrics']));
+      
+}
+
+function display_lyrics_not_found() {
+      document.getElementById("lyrics-id").value = "Lyrics not found";
       
 }
