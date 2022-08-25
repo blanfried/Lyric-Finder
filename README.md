@@ -33,6 +33,6 @@ From the navbar you can choose to navigate to the home screen or recent searches
 # Links
 
 Deployed URL -
-Github URL - https://github.com/blanfried/Lyric-Finder
+Github URL - https://blanfried.github.io/Lyric-Finder/
 
 
